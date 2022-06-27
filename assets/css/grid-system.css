@@ -1,0 +1,63 @@
+.container-fluid {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1200px) {
+  .container-fluid {
+    width: 1170px;
+  }
+}
+.col {
+  width: 100%;
+}
+
+.row {
+  margin-right: -16px;
+  margin-left: -16px;
+}
+
+.row-no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row-no-gutters [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+/* ============ For the mobile (sm) ============ */
+@media (max-width: 46.1875em) {
+}
+/* ============ For the mobile (md) ============ */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+}
+/* ============ For the mobile (lg) ============ */
+@media (min-width: 64em) {
+}
