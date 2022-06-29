@@ -1,3 +1,46 @@
 :root {
   --clr-primary: #ee4d2d;
+  --clr-primary-bg: #fef6f5;
+  --clr-primary-gradient: background-image: linear-gradient(#ee4d2d, #ff7337);
+  --clr-secondary-blue: #0046ab;
+  --clr-secondary-yello: #eda500;
+  --clr-secondary-green: #26aa99;
+  --clr-error: #ee2c4a;
+  --clr-error-bg: #fff4f4;
+  --clr-caution: #f69113;
+  --clr-caution-bg: #fff8e4;
+  --clr-success: #30b566;
+  --clr-success-bg: #f7fffe;
+  --clr-text-primary: rgba(0, 0, 0, .87);
+  --clr-text-primary-o: #212121;
+  --clr-text-secondary: rgba(0,0,0,.65);
+  --clr-text-secondary-o: #595959;
+  --clr-text-tertiary: rgba(0, 0, 0, .54);
+  --clr-text-tertiary-o: #757575;
+  --clr-text-link: #0088ff;
+  --clr-util-placeholder: #fafafa;
+  --font-regular-f: -apple-system,'HelveticaNeue','Helvetica Neue','Roboto','Droid Sans',Arial,sans-serif;
+  --font-regular-w: 400;
+  --font-medium-f: -apple-system,'HelveticaNeue','Helvetica Neue','Roboto','Droid Sans',Arial,sans-serif;
+  --font-medium-w: 500;
+  --font-bold-f: -apple-system,'HelveticaNeue','Helvetica Neue','Roboto','Droid Sans',Arial,sans-serif;
+  --font-bold-w: 700;
+
+
+
+}
+
+body, html {
+  line-height: 1.2;
+  color: rgba(0,0,0,.8);
+}
+
+html {
+  font-size: 62,5%;
+}
+
+body {
+  font-size: .875rem;
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
 }
