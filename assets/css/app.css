@@ -1,7 +1,7 @@
 :root {
   --clr-primary: #ee4d2d;
   --clr-primary-bg: #fef6f5;
-  --clr-primary-gradient: background-image: linear-gradient(#ee4d2d, #ff7337);
+  --clr-primary-gradient: linear-gradient(-180deg, #ee4d2d, #ff7337);
   --clr-secondary-blue: #0046ab;
   --clr-secondary-yello: #eda500;
   --clr-secondary-green: #26aa99;
@@ -11,21 +11,24 @@
   --clr-caution-bg: #fff8e4;
   --clr-success: #30b566;
   --clr-success-bg: #f7fffe;
-  --clr-text-primary: rgba(0, 0, 0, .87);
+  --clr-text-primary: rgba(0, 0, 0, 0.87);
   --clr-text-primary-o: #212121;
-  --clr-text-secondary: rgba(0,0,0,.65);
+  --clr-text-secondary: rgba(0, 0, 0, 0.65);
   --clr-text-secondary-o: #595959;
-  --clr-text-tertiary: rgba(0, 0, 0, .54);
+  --clr-text-tertiary: rgba(0, 0, 0, 0.54);
   --clr-text-tertiary-o: #757575;
   --clr-text-link: #0088ff;
   --clr-util-placeholder: #fafafa;
 
   /* =================== Font and typography =================== */
-  --font-regular-f: -apple-system,'HelveticaNeue','Helvetica Neue','Roboto','Droid Sans',Arial,sans-serif;
+  --font-regular-f: -apple-system, "HelveticaNeue", "Helvetica Neue", "Roboto",
+    "Droid Sans", Arial, sans-serif;
   --font-regular-w: 400;
-  --font-medium-f: -apple-system,'HelveticaNeue','Helvetica Neue','Roboto','Droid Sans',Arial,sans-serif;
+  --font-medium-f: -apple-system, "HelveticaNeue", "Helvetica Neue", "Roboto",
+    "Droid Sans", Arial, sans-serif;
   --font-medium-w: 500;
-  --font-bold-f: -apple-system,'HelveticaNeue','Helvetica Neue','Roboto','Droid Sans',Arial,sans-serif;
+  --font-bold-f: -apple-system, "HelveticaNeue", "Helvetica Neue", "Roboto",
+    "Droid Sans", Arial, sans-serif;
   --font-bold-w: 700;
 
   /* =================== Header =================== */
@@ -34,31 +37,41 @@
 
 /* =================== VARIABLES =================== */
 .text-left {
-  text-align:left
+  text-align: left;
 }
 
 .text-right {
-  text-align:right
+  text-align: right;
 }
 
 .text-center {
-  text-align:center
+  text-align: center;
+}
+.center {
+  display: flex;
+  align-items: center;
+}
+.flex {
+  display: flex;
 }
 
 /* =================== BASE =================== */
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
-:after, :before {
-  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-body, html {
-  line-height: 1.2;
-  color: rgba(0,0,0,.8);
+body,
+html {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 html {
@@ -67,8 +80,11 @@ html {
 }
 
 body {
-  font-size: .875rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, 文泉驛正黑, WenQuanYi Zen Hei,
+    Hiragino Sans GB, 儷黑 Pro, LiHei Pro, Heiti TC, 微軟正黑體,
+    Microsoft JhengHei UI, Microsoft JhengHei, sans-serif;
   text-size-adjust: none;
+  line-height: 1.2;
   -webkit-text-size-adjust: none;
 }
 
@@ -79,6 +95,47 @@ a {
 
 a:focus,
 a:hover {
-  color: #23527c;
-  text-decoration: underline;
+  /* color: #23527c; */
+  /* text-decoration: underline; */
+}
+
+/* =================== HEADER =================== */
+
+.header {
+  height: var(--header-height);
+  background: var(--clr-primary-gradient);
+}
+
+.navbar {
+  color: #fff;
+}
+.nav__link {
+  color: #fff;
+  padding: 0.25rem;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  font-weight: 300;
+  line-height: 1.2;
+  position: relative;
+  overflow: visible;
+  outline: 0;
+}
+
+a:hover {
+  color: hsla(0, 0%, 100%, 0.7);
+  cursor: pointer;
+}
+
+.nav__link-line:not(:first-child)::after {
+  content: "";
+  height: 0.9375rem;
+  width: 0;
+  border-left: 1px solid hsla(0, 0%, 100%, 0.22);
+  border-right: 1px solid hsla(0, 0%, 100%, 0.22);
+  position: absolute;
+  left: -6px;
+  top: calc(50% - 7px);
+}
+.nav__link-line:not(:first-child) {
+  margin-left: 0.625rem;
 }
