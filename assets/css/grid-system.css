@@ -3,6 +3,7 @@
   padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
+  min-width: 1200px;
 }
 .container {
   padding-left: 16px;
@@ -10,18 +11,31 @@
   margin-left: auto;
   margin-right: auto;
 }
-@media (min-width: 1300px) {
-  .container-fluid {
-    width: 1200px;
+
+@media (min-width: 740px) {
+  .container {
+    width: 720px;
   }
 }
-.col {
-  width: 100%;
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1239px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .row {
   margin-right: -16px;
   margin-left: -16px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .row-no-gutters {
@@ -32,6 +46,10 @@
 .row-no-gutters [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+/* For mobile phone */
+[class*="col-"] {
+  width: 100%;
 }
 
 .col-lg-1,
@@ -76,8 +94,8 @@
   padding-left: 16px;
 }
 
-/* ============ For the mobile (sm) ============ */
-@media (max-width: 46.1875em) {
+/* For small screen */
+@media (min-width: 46.25em) {
   .col-sm-1,
   .col-sm-2,
   .col-sm-3,
@@ -129,8 +147,9 @@
     width: 100%;
   }
 }
-/* ============ For the mobile (md) ============ */
-@media (min-width: 46.25em) and (max-width: 63.9375em) {
+
+/* ============ For the tablet (md) ============ */
+@media (min-width: 62em) {
   .col-md-1,
   .col-md-2,
   .col-md-3,
@@ -182,8 +201,8 @@
     width: 100%;
   }
 }
-/* ============ For the mobile (lg) ============ */
-@media (min-width: 64em) {
+/* ============ For the desktop (lg) ============ */
+@media (min-width: 75em) {
   .col-lg-1,
   .col-lg-2,
   .col-lg-3,

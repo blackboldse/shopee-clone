@@ -19,6 +19,8 @@
   --clr-text-tertiary-o: #757575;
   --clr-text-link: #0088ff;
   --clr-util-placeholder: #fafafa;
+
+  /* =================== Font and typography =================== */
   --font-regular-f: -apple-system,'HelveticaNeue','Helvetica Neue','Roboto','Droid Sans',Arial,sans-serif;
   --font-regular-w: 400;
   --font-medium-f: -apple-system,'HelveticaNeue','Helvetica Neue','Roboto','Droid Sans',Arial,sans-serif;
@@ -26,21 +28,57 @@
   --font-bold-f: -apple-system,'HelveticaNeue','Helvetica Neue','Roboto','Droid Sans',Arial,sans-serif;
   --font-bold-w: 700;
 
-
-
+  /* =================== Header =================== */
+  --header-height: 7.5rem;
 }
 
+/* =================== VARIABLES =================== */
+.text-left {
+  text-align:left
+}
+
+.text-right {
+  text-align:right
+}
+
+.text-center {
+  text-align:center
+}
+
+/* =================== BASE =================== */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+:after, :before {
+  -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box
+}
 body, html {
   line-height: 1.2;
   color: rgba(0,0,0,.8);
 }
 
 html {
-  font-size: 62,5%;
+  /* font-size: 62,5%; */
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: .875rem;
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #23527c;
+  text-decoration: underline;
 }
