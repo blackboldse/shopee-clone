@@ -33,7 +33,7 @@
 
   <body>
     <div id="main">
-      <header class="header header__top container-fluid">
+      <header class="header header__top header__top--fixed">
         <div class="header__nav">
           <nav class="container navbar">
             <div class="flex center">
@@ -68,7 +68,9 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   title="Kết nối Facebook"
-                  ><span class="fa-brands fa-facebook"></span
+                  ><span
+                    class="nav__link-icon-social fa-brands fa-facebook"
+                  ></span
                 ></a>
                 <a
                   href="https://www.instagram.com/Shopee_VN/"
@@ -77,7 +79,7 @@
                   rel="noopener noreferrer"
                   title="Kết nối Instagram"
                   ><span
-                    class="nav__link-icon--instagram fa-brands fa-instagram"
+                    class="nav__link-icon-social nav__link-icon--instagram fa-brands fa-instagram"
                   ></span
                 ></a>
               </div>
@@ -201,7 +203,13 @@
             </ul>
           </nav>
         </div>
-        <div class="header__container header__search"></div>
+        <div class="container header__search-container">
+          <div class="container header__search flex">
+            <a class="header-search__logo-section"></a>
+            <div class="header__search-section flex"></div>
+            <div class="header-search__cart flex"></div>
+          </div>
+        </div>
       </header>
     </div>
   </body>
