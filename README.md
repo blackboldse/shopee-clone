@@ -1,1 +1,1 @@
-## Build the Shope-Store-clone
+## Build the Shopee-clone
