@@ -251,3 +251,50 @@ a:hover {
 .toggle-popover__language {
   padding: 0.4375rem 0.625rem;
 }
+
+.nav__link-apps {
+  flex-wrap: wrap;
+  align-items: center;
+}
+.img__app {
+  width: 80px;
+}
+
+/* Download */
+.downloads {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s;
+}
+.navbar .downloads a:hover {
+  display: block;
+}
+.nav__link-downloads {
+  box-shadow: 0 1px 4px 0 rgb(74 74 78 / 12%);
+  -webkit-box-shadow: 0 1px 4px 0 rgb(74 74 78 / 12%);
+  position: absolute;
+  left: 0;
+  top: 1.8rem;
+  border-end-end-radius: 0.25rem;
+  border-end-start-radius: 0.25rem;
+  display: none;
+  z-index: 9999;
+}
+
+.nav__link-download {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+.nav__link-download:hover {
+  cursor: pointer;
+}
+.nav__link-apps {
+  width: 200px;
+}
+
+.img__download-appgallery {
+  padding-bottom: 0.625rem;
+  padding-top: 0.625rem;
+}
