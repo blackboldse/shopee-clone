@@ -167,7 +167,6 @@ a:hover {
 }
 .nav__link--tappable {
   user-select: none;
-  cursor: pointer;
   -moz-user-select: none;
   -webkit-user-select: none;
 }
@@ -179,7 +178,7 @@ a:hover {
 }
 a:hover {
   color: hsla(0, 0%, 100%, 0.7);
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 /* NAV LINK SOCIAL */
 .nav__link-icon-social {
@@ -210,18 +209,10 @@ a:hover {
   margin: 0;
   height: 2.125rem;
 }
-.navbar .nav__link {
-  cursor: pointer;
-}
+
 .nav__link {
   position: relative;
   justify-content: center;
-}
-.nav__link-tappaple {
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  cursor: pointer;
 }
 .nav__link--notification {
   padding: 0;
@@ -232,6 +223,8 @@ a:hover {
   font-weight: 300;
   font-size: 0.8125rem;
   text-transform: capitalize;
+
+  cursor: pointer;
 }
 .svg-icon {
   display: inline-block;
