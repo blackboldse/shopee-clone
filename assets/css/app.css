@@ -261,7 +261,7 @@ a:hover {
   align-items: center;
 }
 .img__app {
-  width: 80px;
+  width: 50px;
 }
 
 /* Download */
@@ -270,17 +270,17 @@ a:hover {
   top: 0;
   left: 0;
   right: 0;
-  transition: all 0.3s;
 }
 .navbar .downloads a:hover {
   display: block;
 }
 .nav__link-downloads {
+  display: none;
   position: absolute;
   left: 0;
   top: 1.8rem;
 
-  display: none;
+  width: 140px;
   padding: 0.5rem;
 
   background-color: #fff;
@@ -288,6 +288,7 @@ a:hover {
   border-radius: 0.25rem;
   box-shadow: 0 1px 4px 0 rgb(74 74 78 / 12%);
   -webkit-box-shadow: 0 1px 4px 0 rgb(74 74 78 / 12%);
+  transition: all 0.25s;
 }
 /* QR HOVER */
 .downloads--hover:hover .nav__link-downloads {
@@ -312,11 +313,7 @@ a:hover {
 .nav__link-download:hover {
   cursor: pointer;
 }
-.nav__link-apps {
-  width: 200px;
-}
-
-.img__download-appgallery {
-  padding-bottom: 0.625rem;
-  padding-top: 0.625rem;
+.nav__link-apps,
+.img__download-qr {
+  width: 140px;
 }
