@@ -310,3 +310,146 @@ a:hover {
 .img__download-qr {
   width: 140px;
 }
+/* SEARCH BAR */
+
+.header__search {
+  justify-content: space-between;
+  padding: 1rem 0 0.625rem;
+  height: 5.125rem;
+  box-sizing: border-box;
+}
+.header-search__logo-section {
+  position: relative;
+  top: -0.1875rem;
+  padding-right: 2.5rem;
+}
+.header-search__logo-wrapper {
+  padding: 2px;
+  margin: -2px;
+  border-radius: 2px;
+}
+.header-search__logo-shopee {
+  display: block;
+
+  width: 162px;
+  height: 50px;
+}
+.icon-shopee-logo {
+  fill: #fff;
+}
+.header__search-section {
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 300;
+
+  width: 840px;
+  background: transparent;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%);
+  box-sizing: border-box;
+}
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  height: 2.5rem;
+  width: 100%;
+  background: #fff;
+  padding: 0.1875rem;
+
+  border-radius: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 9%);
+}
+.searchbar__main {
+  flex: 1;
+}
+
+.form-searchbar {
+  position: relative;
+  box-sizing: border-box;
+  flex: 1;
+  padding: 0 0.625rem;
+}
+.form-searchbar__input {
+  flex: 1;
+  outline: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+/* for BUTTON */
+.btn-solid-primary {
+  position: relative;
+  overflow: visible;
+  outline: none;
+  background: #fb5533;
+}
+.btn--s {
+  height: 34px;
+  padding: 0 15px;
+  min-width: 60px;
+  max-width: 190px;
+}
+.btn-inline {
+  display: inline-flex;
+}
+.btn {
+  display: -webkit-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  line-clamp: 1;
+
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 9%);
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.9;
+  transition: all 0.3s;
+}
+.svg-icon-button__search {
+  display: inline-block;
+  position: relative;
+  width: 1em;
+  height: 1em;
+  fill: #fff;
+}
+
+.searchmenu {
+  width: 100%;
+  flex: 1;
+}
+.menubar {
+  position: relative;
+  flex-wrap: nowrap;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 0.1875rem;
+}
+.menubar__link:first-child {
+  margin-left: 0;
+}
+.menubar__link {
+  position: relative;
+  display: block;
+  overflow: visible;
+  line-height: 0.875rem;
+  height: 0.875rem;
+  margin-left: 12px;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+  white-space: nowrap;
+  text-decoration: none;
+}
