@@ -451,3 +451,25 @@ a:hover {
   white-space: nowrap;
   text-decoration: none;
 }
+/* CART */
+.header-search__cart {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+
+  padding-bottom: 5px;
+  margin: 0 10px;
+}
+.cart-drawer-container {
+  padding: 10px 0;
+}
+.stardust-popover {
+  position: relative;
+}
+.nav__link-icon {
+  width: 26px;
+  height: 26px;
+  fill: currentColor;
+  stroke: #fff;
+  cursor: pointer;
+}
